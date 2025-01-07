@@ -12,7 +12,7 @@ st.title("Tesla Stock Price Prediction")
 # Load the dataset
 @st.cache
 def load_data():
-    data = pd.read_csv('tesla_stock.csv')  # Replace with your file's actual name
+    data = pd.read_csv('TSLA_stock_data.csv')  # Replace with your file's actual name
     data['Date'] = pd.to_datetime(data['Date'])
     return data
 
